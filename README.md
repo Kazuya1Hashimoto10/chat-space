@@ -65,3 +65,14 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
+## textsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foregin_key: true|
+
+### Association
+- belongs_to :users
+- belongs_to :groups
