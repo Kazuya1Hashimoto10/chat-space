@@ -33,7 +33,7 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ### association
-- has_many :texts
+- has_many :messages
 - has_many :groups, through: :users_groups
 
 ### index
@@ -48,7 +48,7 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 
 ## association
-- has_many :texts
+- has_many :messages
 - has_many :users, through: :users_groups
 
 ### index
