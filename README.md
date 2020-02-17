@@ -45,7 +45,6 @@ Things you may want to cover:
 |Columm|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
 
 ## association
 - has_many :messages
