@@ -34,6 +34,7 @@ Things you may want to cover:
 ### association
 - has_many :messages
 - has_many :groups, through: :users_groups
+- has_many :users_groups
 
 ### index
 - add_index :users, :name
