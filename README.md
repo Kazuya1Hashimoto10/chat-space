@@ -38,4 +38,18 @@ Things you may want to cover:
 
 ### index
 - add_index :users, :name
-- add_index :users, :email, unique: true
+- add_index :users, :email, unique:true
+
+## groupsテーブル
+
+|Columm|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+
+## association
+- has_many :texts
+- has_many :users, through: :users_groups
+
+### index
+- add_index :groups, :name
