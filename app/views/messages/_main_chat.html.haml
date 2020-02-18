@@ -25,10 +25,10 @@
       %p.chat-main__message-list--message--text
         sample-text
   .chat-main__message-form
-    %form.form{:action => "#",:method => "post"}
+    %form.form{action: "#",:method: "post"}
       .form-box
-        %input.form-box--text{:type => "text_area",:placeholder => "type a message"}
+        %input.form-box--text{type: "text_area",placeholder: "type a message"}
         %label.form-box--label
           = icon('fas', 'image')
           %input.form-box--image-submit{type: "file"}
-        %input.form-box--submit{:type => "submit",:name => "commit", :value => "Send"}
+        %input.form-box--submit{type: "submit",name: "commit", value: "Send"}
