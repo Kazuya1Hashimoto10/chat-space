@@ -10,7 +10,7 @@
   height: 100vh;
   width: 300px;
   background-color: #253141;
-  .side-bar__user-name{
+  &__user-name{
     background-color: #253141;
     height: 100px;
     position: relative;
@@ -23,11 +23,11 @@
       width: 260px;
       display: flex;
       justify-content: space-between;
-      .tip-items__name{
+      &__name{
         font-weight: bold;
         color: white;
       }
-      .tip-items__icons{
+      &__icons{
         height: 20px;
         width: 60px;
         text-align: right;
@@ -48,17 +48,17 @@
     .groups {
       height: calc(100vh - 100px);
       background-color: #2f3e51;
-      .group{
+      &--group{
         margin-bottom: 40px;
         padding: 20px 20px 0;
         height: 65;
-        .group-name{
+        &--name{
           font-size: 15px;
           margin-bottom: 5px;
           color: #ffffff;
           font-weight: bold;
         }
-        .group-text{
+        &--text{
           font-size: 11px;
           color:#ffffff;
           font-weight: bold;
@@ -68,7 +68,7 @@
   }
 }
 
-.main-chat{
+.chat-main{
   height: 100vh;
   width: calc(100vw - 300px);
   background-color: #ffffff;
@@ -101,13 +101,13 @@
       border: solid 1px #38aef0;
       position: absolute;
       right: 40px;
-      .edit-btn{
+      &--edit-btn{
         text-decoration: none;
         color: #38aef0;
       }
     }
   }
-  .chat-main__message-list{
+  &__message-list{
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-top: 35px;
@@ -138,7 +138,7 @@
     padding: 20px 40px;
     .form{
       font-weight: bold;
-      .form-box{
+      &-box{
         position: relative;
         width: 100%;
         display: flex;
@@ -157,7 +157,7 @@
             display: none;
           }
         }
-        .form-box--submit{
+        &--submit{
           width: 100px;
           height: 50px;
           background-color: #38aef0;
