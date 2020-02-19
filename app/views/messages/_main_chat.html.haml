@@ -2,11 +2,13 @@
   .main-header
     .main-header--left-box
       %h2.main-header--left-box-group-name
-        テスト
+        = @group.name
       %p.main-header--left-box-group-menber
-        menber
+        Menber:
+        - @group.group_users.each do |group_user|
+          = group_user.user.name
     .main-header--right-box
-      = link_to "Edit", href = "#", class: "main-header--right-box--edit-btn"
+      = link_to "Edit", edit_group_path(@group.id), class: "main-header--right-box--edit-btn"
   .chat-main__message-list
     = render @messages
   .chat-main__message-form
