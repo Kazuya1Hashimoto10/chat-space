@@ -45,28 +45,25 @@
   .side-bar__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    .groups {
-      height: calc(100vh - 100px);
-      background-color: #2f3e51;
-      &--group{
-        margin-bottom: 40px;
-        padding: 20px 20px 0;
-        height: 65;
-        &--name{
-          font-size: 15px;
-          margin-bottom: 5px;
-          color: #ffffff;
-          font-weight: bold;
-        }
-        &--text{
-          font-size: 11px;
-          color:#ffffff;
-          font-weight: bold;
-        }
+    .group{
+      margin-bottom: 40px;
+      padding: 20px 20px 0;
+      height: 65;
+      &--name{
+        font-size: 15px;
+        margin-bottom: 5px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      &--text{
+        font-size: 11px;
+        color:#ffffff;
+        font-weight: bold;
       }
     }
   }
 }
+
 
 .chat-main{
   height: 100vh;
