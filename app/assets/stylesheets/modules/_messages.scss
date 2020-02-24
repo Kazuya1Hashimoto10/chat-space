@@ -111,6 +111,7 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-top: 35px;
+    overflow: scroll;
     &--message{
       padding-bottom: 46px;
       margin-left: 40px;
