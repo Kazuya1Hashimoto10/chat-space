@@ -91,13 +91,16 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
-      var insertHTML = '';
-      //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
-      $.each(messages, function(i, message) {
-        insertHTML += buildHTML(message)
-      });
-      //メッセージが入ったHTMLに、入れ物ごと追加
-      $('.messages').append(insertHTML);
+      if (messages.length !== 0){
+        var insertHTML = '';
+        //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        //メッセージが入ったHTMLに、入れ物ごと追加
+        $('.chat-main__message-list').append(insertHTML);
+        $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
+      }
     })
     .fail(function() {
       console.log('error');
