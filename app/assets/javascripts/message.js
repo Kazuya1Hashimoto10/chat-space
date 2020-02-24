@@ -106,5 +106,7 @@ $(function(){
       console.log('error');
     });
   };
-  setInterval(reloadMessages, 7000);
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  }
 });
